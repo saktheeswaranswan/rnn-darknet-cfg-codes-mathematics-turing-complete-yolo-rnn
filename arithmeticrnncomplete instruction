@@ -1,0 +1,9 @@
+Explanation of changes made:
+
+The inputs parameter is set to 20 to accommodate numbers with up to 20 digits.
+The time_steps parameter is also set to 20 to match the maximum number of digits.
+The output parameter in the last [connected] layer is set to 8, indicating that the network will output the results of 8 different operations.
+The activation in the [connected] layer is set to linear to allow the network to output the results of the operations directly.
+Please note that training a network to perform multiple arithmetic operations simultaneously can be complex and requires careful preprocessing of the input data and design of the network architecture. Additionally, for operations like finding polynomial roots, you might need a different approach such as regression rather than classification.
+
+Make sure to preprocess your input data accordingly, encode the operations as labels or one-hot vectors, and adapt your training process accordingly.

@@ -1,0 +1,21 @@
+import random
+
+def generate_addition_data(digits, num_samples):
+    data = []
+    for _ in range(num_samples):
+        a = random.randint(10**(digits-1), 10**digits - 1)
+        b = random.randint(10**(digits-1), 10**digits - 1)
+        result = a + b
+        data.append((a, b, result))
+    return data
+
+digits = 2  # Number of digits in the generated numbers
+num_samples = 1000  # Number of addition examples to generate
+
+data = generate_addition_data(digits, num_samples)
+
+# Print the generated data
+for example in data:
+    a, b, result = example
+    print(f"{a} + {b} = {result}")
+
